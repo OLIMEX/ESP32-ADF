@@ -14,4 +14,8 @@ ESP32 Audio Development Framework development board
 - Four touch buttons, 3 tactile buttons
 - power supply Jack for +5V 1A
 
+# License
+- Hardware is with CERN OHL v1.2 license
+- Software is with GPL3 license
+- Documentation is with CC BY-SA 4.0 license
 
