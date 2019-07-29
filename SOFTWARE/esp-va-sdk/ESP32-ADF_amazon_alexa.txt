@@ -1,0 +1,20 @@
+1. Getting sources
+    git clone --recursive https://github.com/espressif/esp-idf.git
+    cd esp-idf; git checkout release/v3.2; cd ..
+    git clone https://github.com/OLIMEX/ESP32-ADF/SOFTWARE/esp-va-sdk    
+    !!!! if you recieve many build errors. Please run git submodule update in odf directory
+
+2. Building 
+    Follow https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html
+    Set up ESP32 toolchain and PATHS
+    export PATH=/home/<user>/esp/xtensa-esp32-elf/bin/:$PATH # for Toolchain
+    export IDF_PATH=/home/<user>/esp/esp-idf
+    cd esp-va-sdk/examples/amazon_alexa
+    export ESPPORT=/dev/ttyUSBx
+    export AUDIO_BOARD_PATH=/path/to/esp-va-sdk/board_support_pkgs/olimex_esp32_adf/audio_board/audio_board_olimex/
+    make -j4 flash monitor
+    
+3. Provisioning
+    3.1 Create Amazon AWS Account 
+    3.2 Follow readme located in esp-avs-sdk/examples/amazon_alexa
+
