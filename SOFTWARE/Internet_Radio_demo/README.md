@@ -46,4 +46,7 @@ Next station: <Play>
 Presset station: <Set>
 ```
 
-
+Note: Patch is requered to es8388 driver in esp-adf to enable speakers. From project directory run
+```bash
+patch $ADF_PATH/components/audio_hal/driver/es8388/es8388.c < es8388_fix_speaker_volume.patch 
+```
