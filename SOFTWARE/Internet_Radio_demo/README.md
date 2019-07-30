@@ -50,3 +50,4 @@ Note: Patch is required to es8388 driver in esp-adf to enable speakers. From pro
 ```bash
 patch $ADF_PATH/components/audio_hal/driver/es8388/es8388.c < es8388_fix_speaker_volume.patch 
 ```
+Graphical part of project is based on loboris/ESP32_TFT_library https://github.com/loboris/ESP32_TFT_library
