@@ -1,0 +1,19 @@
+Hardware revision changes
+
+Revision C
+
+1. Headphone detect is no longer wired ot the ESP32 module, operates directly the PA enable.
+2. Added jumper SJ1 - by default open; if you close it it will disable PA. For projects without speakers.
+3. Added SD card. 
+4. Kept maximum compatiblity with lyRa 4.3, only board.h changes required.
+5. SPI of UEXT connected with hspi to esp32 at pins 12, 13, 14, 15.
+6. Changed some wires of UART1, IRRX.
+
+Revision B
+
+Module ESP32-WROOM changed with ESP32-WROVER
+
+Revision A - initial release
+
+
+
